@@ -1,119 +1,162 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Livros</title>
-    
-    <nav style=" background-color: rgb(187, 187, 187)" class="navbar navbar-expand-lg navbar-light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <a class="navbar-brand" href="index.html">Livros e café</a>
-      
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="Livros.html"><Strong>Livros</Strong></a>
-              <span class="sr-only">(current)</span>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="sobre.html">Sobre</a>
-              </li>
-          </ul>
-      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Recomendações de livros</title>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4C2A0D">
+
+    <a class="navbar-brand" href="index.html">Livros e Café</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Livros.html"><Strong>Recomendações</Strong></a>
+          <span class="sr-only">(current)</span>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+</head>
+
+<body style="background-color: #8C6A49; color: white;">
+  <div style="display:flex; justify-content:center; margin-top: 10px;" class="flexcenter">
+    <h1>Recomendações de livros</h1>
+  </div>
+
+  <div style="display: flex; justify-content:center; margin-top: 10px" class="card-container">
+
+    <style>
+      .card {
+        background-color: #DAA520;
+        color: white;
+        margin: 20px;
+        height: 800px;
+        transition: background-color 0.3s, color 0.3s, transform 0.3s, margin 0.3s;
+      }
+
+      .card:hover {
+        background-color: white;
+        color: #DAA520;
+        transform: scale(1.05);
+
+      }
+
+      .card-img-top {
+        height: 480px;
+      }
+
+      .row {
+        display: flex;
+        margin-left: 20px;
+        flex-direction: column;
+      }
+    </style>
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/817esPahlrL._SL1500_.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">"Cem Anos de Solidão" de Gabriel García Márquez</h5>
+          <p class="card-text">Este épico da literatura latino-americana narra a história da família Buendía ao longo de
+            sete gerações na fictícia Macondo. Com elementos mágicos e realistas, o romance explora temas como solidão,
+            amor, guerra e a passagem do tempo.</p>
+
         </div>
-      </nav>
-  </head>
-  <body>
-    <div style = "display:flex; justify-content:center; margin-top: 10px;"class="flexcenter">
-    <h1>Livros</h1>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/91WKPd60P4L._SL1500_.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">"O Sol é para Todos" de Harper Lee</h5>
+          <p class="card-text"> Uma obra-prima da literatura americana, este romance conta a história de Scout Finch,
+            uma garota do sul dos EUA, enquanto ela testemunha o julgamento de um homem negro acusado injustamente. O
+            livro aborda temas de racismo, justiça e empatia.</p>
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71kxa1-0mfL._SL1500_.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">"1984" de George Orwell</h5>
+          <p class="card-text">Uma distopia clássica que descreve um futuro sombrio e totalitário. O livro segue Winston
+            Smith, um homem que questiona o governo opressor e se rebela contra a vigilância constante do "Grande
+            Irmão".</p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/91xOzA3VHtL._SL1500_.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">"A Sombra do Vento" de Carlos Ruiz Zafón</h5>
+          <p class="card-text">Esta história leva os leitores a um misterioso mundo literário em Barcelona. O
+            protagonista, Daniel, descobre um livro raro e parte em uma jornada para desvendar os segredos por trás do
+            autor e da trama.</p>
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81Ys8iemw+L._SL1500_.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">"Dom Quixote" de Miguel de Cervantes</h5>
+          <p class="card-text">Considerado um dos maiores romances já escritos, "Dom Quixote" segue a jornada de um
+            cavaleiro idealista que luta contra moinhos de vento e busca justiça. Esta obra clássica é uma reflexão
+            profunda sobre sonhos e realidade.</p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61jgm6ooXzL._SL1000_.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">"Harry Potter e a Pedra Filosofal" de J.K. Rowling</h5>
+          <p class="card-text">O início da amada série "Harry Potter" apresenta um jovem órfão, Harry, que descobre que
+            é um bruxo e é convidado para estudar em Hogwarts. Ele embarca em uma jornada mágica cheia de amizade,
+            aventura e mistérios.</p>
+
+        </div>
+      </div>
     </div>
 
-  <div style="display: flex; justify-content:center; margin-top: 10px"class="card-container"> 
-   
-    <style> 
-    .card{
-        
-        margin-bottom: 20px;
-    } 
 
-    .row{
-        display: flex;
-        margin-left: 40px;
-        flex-direction: column;
-    }
-    </style>
-        <div class = "row">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           
-            </div>
-          </div>
-      
-   
-        </div>
-        <div class = "row">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               
-                </div>
-          
-            
-       
-         </div>
-         
-    
-        </div>
-        <div class = "row">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               
-                </div>
-         </div>
-        </div>
- 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+</body>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
 </html>
